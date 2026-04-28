@@ -1,33 +1,25 @@
-HELP.md
+# Secret configuration files - NEVER COMMIT!
+application-dev.properties
+application-prod.properties
+.env
+
+# Build output
 target/
-.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+*.log
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# IDE files
+.idea/
 *.iml
-*.ipr
+.settings/
+.classpath
+.project
+.springBeans
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# OS files
+.DS_Store
+Thumbs.db
 
-### VS Code ###
-.vscode/
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
